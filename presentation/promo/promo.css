@@ -581,7 +581,7 @@ p {
   justify-items: start;
   background:
     linear-gradient(90deg, transparent 0%, #03060499 50%, #030604f3 100%),
-    url("assets/global-finale.jpg") center/cover no-repeat;
+    url("assets/global-finale-v2.jpg") center/cover no-repeat;
 }
 .finale h1,
 .finale h2,
