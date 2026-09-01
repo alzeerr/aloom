@@ -445,6 +445,155 @@ p {
   background:
     radial-gradient(circle at 50% 48%, #d7b56555, transparent 25%), #050706;
 }
+/* Full cinematic campaign imagery — one original scene per slide */
+.manifesto {
+  background:
+    linear-gradient(90deg, transparent 0%, #030604aa 50%, #030604f3 100%),
+    url("assets/manifesto-stories.jpg") center/cover no-repeat;
+}
+.manifesto h2,
+.manifesto .bigline,
+.manifesto .glowline {
+  max-width: 58%;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 4px 30px #000;
+}
+.discovery {
+  display: none;
+  grid-template-columns: 1fr;
+  background:
+    linear-gradient(90deg, transparent 0%, #03100baa 48%, #030604f4 100%),
+    url("assets/discovery-world.jpg") center/cover no-repeat;
+}
+.discovery.active {
+  display: grid;
+}
+.discovery .copy {
+  width: 56%;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 4px 30px #000;
+}
+.discovery .stream {
+  display: none;
+}
+.live {
+  background:
+    linear-gradient(90deg, transparent 0%, #030604aa 50%, #030604f4 100%),
+    url("assets/live-moment.jpg") center/cover no-repeat;
+}
+.live h2,
+.live .kicker,
+.live .bigline {
+  max-width: 58%;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 4px 30px #000;
+}
+.live .pulse {
+  display: none;
+}
+.creator {
+  display: none;
+  grid-template-columns: 1fr;
+  background:
+    linear-gradient(90deg, transparent 0%, #030604aa 50%, #030604f4 100%),
+    url("assets/creator-tools.jpg") center/cover no-repeat;
+}
+.creator.active {
+  display: grid;
+}
+.creator .copy {
+  width: 56%;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 4px 30px #000;
+}
+.creator .lens {
+  display: none;
+}
+.community {
+  text-align: right;
+  justify-items: start;
+  background:
+    linear-gradient(90deg, transparent 0%, #030604aa 50%, #030604f4 100%),
+    url("assets/community-majlis.jpg") center/cover no-repeat;
+}
+.community h2,
+.community .bigline {
+  max-width: 58%;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 4px 30px #000;
+}
+.community .people {
+  display: none;
+}
+.economy {
+  background:
+    linear-gradient(90deg, transparent 0%, #030604aa 50%, #030604f4 100%),
+    url("assets/creator-economy.jpg") center/cover no-repeat;
+}
+.economy h2,
+.economy .kicker,
+.economy > p:not(.num) {
+  max-width: 58%;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 4px 30px #000;
+}
+.economy .coin {
+  display: none;
+}
+.experiences {
+  background:
+    linear-gradient(90deg, transparent 0%, #030604aa 50%, #030604f4 100%),
+    url("assets/auctions-nominations.jpg") center/cover no-repeat;
+}
+.experiences h2,
+.experiences .kicker,
+.experiences .duo {
+  max-width: 58%;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 4px 30px #000;
+}
+.safe {
+  background:
+    linear-gradient(90deg, transparent 0%, #030604aa 50%, #030604f4 100%),
+    url("assets/trust-safety.jpg") center/cover no-repeat;
+}
+.safe h2,
+.safe .bigline {
+  max-width: 58%;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 4px 30px #000;
+}
+.safe .shield {
+  display: none;
+}
+.finale {
+  text-align: right;
+  justify-items: start;
+  background:
+    linear-gradient(90deg, transparent 0%, #03060499 50%, #030604f3 100%),
+    url("assets/global-finale.jpg") center/cover no-repeat;
+}
+.finale h1,
+.finale h2,
+.finale p {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 4px 30px #000;
+}
+.finale .orb {
+  display: none;
+}
+
 .controls {
   position: fixed;
   z-index: 10;
@@ -532,6 +681,27 @@ button:hover {
   .culture h2,
   .culture .kicker,
   .culture .words {
+    max-width: 100%;
+  }
+  .manifesto h2,
+  .manifesto .bigline,
+  .manifesto .glowline,
+  .discovery .copy,
+  .live h2,
+  .live .kicker,
+  .live .bigline,
+  .creator .copy,
+  .community h2,
+  .community .bigline,
+  .economy h2,
+  .economy .kicker,
+  .economy > p:not(.num),
+  .experiences h2,
+  .experiences .kicker,
+  .experiences .duo,
+  .safe h2,
+  .safe .bigline {
+    width: 100%;
     max-width: 100%;
   }
   .controls {
