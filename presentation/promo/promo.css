@@ -551,7 +551,7 @@ p {
 .experiences {
   background:
     linear-gradient(90deg, transparent 0%, #030604aa 50%, #030604f4 100%),
-    url("assets/auctions-nominations.jpg") center/cover no-repeat;
+    url("assets/auctions-nominations-v2.jpg") center/cover no-repeat;
 }
 .experiences h2,
 .experiences .kicker,
